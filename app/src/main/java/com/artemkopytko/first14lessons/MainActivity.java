@@ -67,6 +67,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                         String pwd = dictionaryInt.get(inputUsername);
                         if (pwd.equals(inputPassword)) {
                             intentUser.putExtra("username", inputMainUsername.getText().toString());
+                            intentUser.putExtra("from", "main");
                             startActivity(intentUser);
                         } else {
                             Toast.makeText(this, "Неверный логин/пароль", Toast.LENGTH_LONG).show();

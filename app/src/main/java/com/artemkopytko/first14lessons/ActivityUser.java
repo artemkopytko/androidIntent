@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import static com.artemkopytko.first14lessons.R.id.buttonUserGoHome;
 
@@ -31,15 +32,24 @@ public class ActivityUser extends AppCompatActivity implements View.OnClickListe
 
         Intent intent = getIntent();
 
+        String username = intent.getStringExtra("username");
+        textViewUsername.setText("Hello, " + username);
+        String cameFrom = intent.getStringExtra("from");
+        if(cameFrom.equals("main")) {
+            Toast.makeText(this, "С возвращением!", Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(this, "Добро пожаловать!", Toast.LENGTH_LONG).show();
+        }
+
 
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (data == null) {return;}
-        String username = data.getStringExtra("username");
-        textViewUsername.setText("Hello " + username);
-    }
+//    @Override
+//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+//        if (data == null) {return;}
+//        String username = data.getStringExtra("username");
+//        textViewUsername.setText("Hello " + username);
+//    }
 
     public void onClick(View v) {
         Log.d(TAG, "по id определяем кнопку, вызвавшую этот обработчик");

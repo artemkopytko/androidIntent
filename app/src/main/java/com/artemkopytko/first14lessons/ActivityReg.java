@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import static com.artemkopytko.first14lessons.R.id.buttonRegSignup;
 
@@ -51,10 +52,12 @@ public class ActivityReg extends AppCompatActivity implements View.OnClickListen
                     AuthDictionary.keyMap.put(inputUsername, inputPassword);
 
                     intentGoUser.putExtra("username", editTextRegLogin.getText().toString());
-                    setResult(RESULT_OK, intentGoUser);
-                    finish();
+                    intentGoUser.putExtra("from", "signup");
+//                    setResult(RESULT_OK, intentGoUser);
+//                    finish();
                     startActivity(intentGoUser);
                 } else {
+                    Toast.makeText(this, "Неверно введен логин/пароль", Toast.LENGTH_LONG).show();
                     Log.d(TAG, "Неверно введен логин/пароль");
                 }
                 break;
