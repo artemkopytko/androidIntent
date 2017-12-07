@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_x="32dp"
+        android:layout_y="236dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textViewMainLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="150dp"
+        android:layout_y="90dp"
+        android:text="Please, log in" />
+
+    <Button
+        android:id="@+id/buttonLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="151dp"
+        android:layout_y="310dp"
+        android:text="Log in" />
+
+    <Button
+        android:id="@+id/buttonMainSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="148dp"
+        android:layout_y="458dp"
+        android:text="Sign up" />
+
+    <TextView
+        android:id="@+id/textViewMainOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="186dp"
+        android:layout_y="437dp"
+        android:text="or"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_x="31dp"
+        android:layout_y="166dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+</AbsoluteLayout>

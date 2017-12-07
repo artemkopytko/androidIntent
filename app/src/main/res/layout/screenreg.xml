@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewRegLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="8dp"
+        android:layout_y="157dp"
+        android:text="Login: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewRegPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="8dp"
+        android:layout_y="229dp"
+        android:text="Password:"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonRegSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="140dp"
+        android:layout_y="372dp"
+        android:text="Sign up" />
+
+    <TextView
+        android:id="@+id/textViewRegTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="173dp"
+        android:layout_y="88dp"
+        android:text="Sign up" />
+
+    <EditText
+        android:id="@+id/editTextRegPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="114dp"
+        android:layout_y="218dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextRegUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="115dp"
+        android:layout_y="148dp"
+        android:ems="10"
+        android:hint="username"
+        android:inputType="textPersonName" />
+</AbsoluteLayout>
